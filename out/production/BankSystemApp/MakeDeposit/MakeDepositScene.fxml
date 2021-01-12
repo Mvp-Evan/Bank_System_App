@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MakeDeposit.MakeDepositController">
+   <children>
+      <Button fx:id="oKButton" layoutX="155.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#informationDisplay" text="OK" />
+      <Button fx:id="cancelButton" layoutX="392.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#backToMainScene" text="Cancel" />
+      <Label layoutX="50.0" layoutY="91.0" text="DepositType" />
+      <Label layoutX="366.0" layoutY="24.0" text="Information of your deposit" />
+      <GridPane layoutX="366.0" layoutY="41.0" prefHeight="190.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.39996337890625" minWidth="10.0" prefWidth="80.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.20001220703125" minWidth="10.0" prefWidth="119.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ID" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <Label text="Address" GridPane.rowIndex="2" />
+            <Label text="DepositType" GridPane.rowIndex="3" />
+            <Label text="InterestRate" GridPane.rowIndex="4" />
+            <Label text="Figure" GridPane.rowIndex="5" />
+            <Label fx:id="idOutput" text="blank" GridPane.columnIndex="1" />
+            <Label fx:id="nameOutput" text="blank" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="addressOutput" text="blank" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="depositTypeOutput" text="blank" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="interestRateOutput" text="blank" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="figureOutput" text="blank" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Label layoutX="62.0" layoutY="159.0" text="Figure" />
+      <TextField fx:id="figureInput" layoutX="135.0" layoutY="155.0" />
+      <ChoiceBox fx:id="depositType" layoutX="135.0" layoutY="87.0" onMouseClicked="#choiceDepositType" prefHeight="23.0" prefWidth="161.0" />
+      <Separator layoutX="321.0" layoutY="27.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="13.0" />
+   </children>
+</AnchorPane>

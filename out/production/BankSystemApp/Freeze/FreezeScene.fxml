@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Freeze.FreezeController">
+    <Label layoutX="114.0" layoutY="94.0" prefHeight="34.0" prefWidth="135.0" text="IdentityNumber:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <TextField fx:id="identityNumber" layoutX="300.0" layoutY="100.0" />
+    <TextField fx:id="phoneNumber" layoutX="300.0" layoutY="177.0" />
+    <Label layoutX="114.0" layoutY="179.0" prefHeight="15.0" prefWidth="112.0" text="PhoneNumber:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="115.0" layoutY="252.0" text="verifyMessage:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <TextField fx:id="verifyMessage" layoutX="300.0" layoutY="251.0" />
+    <Button layoutX="433.0" layoutY="334.0" mnemonicParsing="false" onAction="#check" text="OK" />
+    <Button layoutX="273.0" layoutY="334.0" mnemonicParsing="false" onAction="#emptyAll" text="Empty" />
+    <Button layoutX="115.0" layoutY="334.0" mnemonicParsing="false" onAction="#backToMainScene" text="Back" />
+</AnchorPane>

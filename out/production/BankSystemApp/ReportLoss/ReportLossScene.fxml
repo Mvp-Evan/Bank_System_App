@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportLoss.ReportLossController">
+    <Label layoutX="114.0" layoutY="50.0" prefHeight="34.0" prefWidth="135.0" text="userName:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <TextField fx:id="userName" layoutX="300.0" layoutY="50.0" />
+    <TextField fx:id="newPassport" layoutX="300.0" layoutY="150.0" />
+    <Label layoutX="114.0" layoutY="150.0" prefHeight="15.0" prefWidth="112.0" text="newPassport:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="115.0" layoutY="250.0" text="confirmPassport:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <TextField fx:id="confirmPassport" layoutX="300.0" layoutY="250.0" />
+    <Button layoutX="433.0" layoutY="334.0" mnemonicParsing="false" onAction="#change" text="OK" />
+    <Button layoutX="273.0" layoutY="334.0" mnemonicParsing="false" onAction="#emptyAll" text="Empty" />
+    <Button layoutX="115.0" layoutY="334.0" mnemonicParsing="false" onAction="#backToMainScene" text="Back" />
+</AnchorPane>
